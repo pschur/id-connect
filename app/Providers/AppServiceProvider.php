@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Gate::define('viewAuthSetup', function (\DevDojo\Auth\Models\User $user) {
+            return in_array($user->email, config('devdojo.auth.settings.access_controll', []));
+        });
     }
 }

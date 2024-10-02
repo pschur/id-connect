@@ -15,4 +15,6 @@ return [
     'login_show_social_providers' => true,
     'center_align_social_provider_button_content' => false,
     'social_providers_location' => 'bottom',
+
+    'access_controll' => explode(',', env('AUTH_ACCESS_CONTROL', 'admin@admin.com')),
 ];

@@ -9,7 +9,13 @@
         "devdojo/auth": "^1.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "nl.idaas/laravel-openid-connect": "^0.4.0"
+        "nl.idaas/laravel-openid-connect": "^0.4.0",
+        "socialiteproviders/apple": "^5.6",
+        "socialiteproviders/microsoft": "^4.5",
+        "socialiteproviders/pinterest": "^4.3",
+        "socialiteproviders/reddit": "^4.1",
+        "socialiteproviders/tiktok": "^5.2",
+        "socialiteproviders/twitch": "^5.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
